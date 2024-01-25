@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img
+                    src="data:image/jpeg;base64,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"
+                    alt="" height="70px" width="180px"></div>
+            <ul>
+                <li>
+                    <span class="list">
+                        Products
+                    </span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>
+                    <span class="list">
+                        Pricing
+                    </span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>
+                    <span class="list">
+                        Resources
+                    </span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li>
+                    <span class="list">
+                        About Us
+                    </span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                            stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li> <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div class="container">
+            <div class="item">
+                <h4 class="text">
+                    English
+                </h4>
+                <h5 class="text">
+                    &nbsp;
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+
+
+            <div class="item">
+                <h4 class="text">
+                    Deutsch
+                </h4>
+                <h5 class="text">
+                    German
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    Italiano
+                </h4>
+                <h5 class="text">
+                    Italian
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    Espanol
+                </h4>
+                <h5 class="text">
+                    Spanish
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    Francais
+                </h4>
+                <h5 class="text">
+                    French
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    Portuguese Brazilian
+                </h4>
+                <h5 class="text">
+                    Portuguese Brazilian
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    日本語
+                </h4>
+                <h5 class="text">
+                    Japanese
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    한국인
+                </h4>
+                <h5 class="text">
+                    Korean
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    中国人
+                </h4>
+                <h5 class="text">
+                    Chinese
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+            <div class="item">
+                <h4 class="text">
+                    繁体中文
+                </h4>
+                <h5 class="text">
+                    traditional Chinese
+                </h5>
+
+                <span class="bit-32">
+                    <a href="ue_english.exe"> DownLoad 32-bit</a>
+                </span>
+                <span class="bit-64">
+                    <a href="ue_english.exe">DownLoad 64-bit</a>
+                </span>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
